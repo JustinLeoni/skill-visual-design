@@ -26,6 +26,7 @@ Este es el estándar de la skill y se aplica **siempre**, salvo que el usuario p
 
 - **Color:** solo **blanco, gris y negro**, en neutros puros y sin tinte. Sin colores de acento y sin tonos crema, beige o cálidos. La jerarquía se crea con contraste, escala y espacio, no con color.
 - **Fondos:** blanco o gris neutro. Las superficies grises sirven para agrupar, nunca para decorar con color. Nada de fondos tintados.
+- **Separación:** sin líneas finas. No uses bordes de 1px, separadores ni hairlines para dividir secciones, listas o tarjetas, ni rejillas dibujadas con líneas. Separa con **espacio** y, si necesitas agrupar, usa una superficie de fondo (gris).
 - **Tipografía:** familias **sans normales y minimalistas** (por ejemplo Inter, system-ui, Helvetica, Arial). Sin serif, sin cursivas y sin display decorativos.
 - **Marca:** si no existe un logotipo, **no inventes uno**; deja el espacio sin logo y usa el nombre en texto si hace falta identidad.
 - **Imagen:** si no hay imágenes reales, no uses placeholders genéricos ni imágenes remotas arbitrarias; trabaja con tipografía, espacio y datos.
@@ -98,6 +99,7 @@ Son rangos de partida, no mandatos. Prioriza el viewport y el contenido reales.
 - Evita mayúsculas enormes para párrafos, etiquetas diminutas, titulares ilegibles, contraste pobre, animación sin propósito y estados inactivos que parecen clicables.
 - No inventes logotipos, isotipos ni marcas si el proyecto no tiene uno; deja el espacio sin logo.
 - No uses fondos ni paletas cálidas o tintadas (crema, beige, arena, marfil): el fondo es blanco o gris neutro.
+- No dibujes separadores ni rejillas con líneas finas (bordes de 1px); separa con espacio y, para agrupar, usa una superficie de fondo.
 - No uses serif, cursivas, display decorativos ni color de acento cuando el brief no lo pide (ver *Sistema visual por defecto*).
 - No uses frases, marcas, personas, métricas o contenido de las capturas como si pertenecieran al proyecto.
 

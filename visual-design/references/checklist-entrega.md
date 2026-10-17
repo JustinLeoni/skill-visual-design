@@ -15,6 +15,7 @@ Revisión final antes de dar por terminada una interfaz. Aplica a web, producto,
 - [ ] Los tokens (color, espacio, radios, sombras) se usan de forma consistente.
 - [ ] Los componentes comparten reglas: radios, bordes, sombras, estados.
 - [ ] El color es solo blanco, gris y negro salvo petición expresa; no hay fondos tintados.
+- [ ] No hay líneas finas de separación ni rejillas dibujadas con bordes; la separación es por espacio o superficie.
 - [ ] La tipografía es sans (sin serif ni cursivas) y no hay logotipo inventado si el proyecto no tiene uno.
 - [ ] Color de acento solo si el proyecto lo justifica.
 - [ ] El color tiene función (jerarquía, estado, marca), no decora sin motivo.

@@ -1,8 +1,8 @@
 {
-  "version": "1.2.0",
+  "version": "1.3.0",
   "organization": "Visual Design",
   "date": "October 2026",
-  "abstract": "Skill agnóstica al agente para diseñar, implementar y revisar interfaces digitales con dirección visual premium. Cubre páginas web, landing pages, dashboards, aplicaciones, portafolios y presentaciones. Define principios de composición, tipografía, color, imagen, componentes, responsive, accesibilidad y movimiento, además de direcciones visuales reutilizables y una checklist de entrega. Sistema visual por defecto obligatorio: solo blanco, gris y negro (sin fondos tintados ni colores de acento), tipografía sans normal y minimalista (sin serif ni cursivas) y sin logotipo inventado. Portable: un único SKILL.md con referencias de apoyo.",
+  "abstract": "Skill agnóstica al agente para diseñar, implementar y revisar interfaces digitales con dirección visual premium. Cubre páginas web, landing pages, dashboards, aplicaciones, portafolios y presentaciones. Define principios de composición, tipografía, color, imagen, componentes, responsive, accesibilidad y movimiento, además de direcciones visuales reutilizables y una checklist de entrega. Sistema visual por defecto obligatorio: solo blanco, gris y negro (sin fondos tintados ni colores de acento), tipografía sans normal y minimalista (sin serif ni cursivas), sin logotipo inventado y sin líneas finas de separación (se separa con espacio). Portable: un único SKILL.md con referencias de apoyo.",
   "references": [
     "https://www.w3.org/WAI/WCAG22/quickref/",
     "https://developer.mozilla.org/en-US/docs/Web/CSS",
