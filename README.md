@@ -26,9 +26,10 @@ Cubre distintos tipos de diseño, no un estilo único:
 La skill aplica este sistema por defecto, salvo que el usuario pida otra cosa:
 
 - **Color:** solo **blanco, gris y negro**, en neutros puros y sin tinte. Sin colores de acento ni fondos crema, beige o tintados.
+- **Todo plano:** sin líneas, bordes ni sombras. Cada sección o bloque se distingue **solo por el tono** del fondo.
+- **Jerarquía por peso y tono:** titulares y textos grandes en **bold o heavy** (700–900) de la misma sans; la diferencia se hace con peso y tono de gris.
 - **Tipografía:** sans **normal y minimalista** (Inter, system-ui, Helvetica, Arial). Sin serif, sin cursivas y sin display decorativos.
 - **Marca:** si el proyecto no tiene logotipo, no se inventa uno.
-- **Separación:** sin líneas finas (bordes de 1px, separadores ni rejillas dibujadas); se separa con espacio y superficies de fondo.
 - **Imagen:** sin placeholders genéricos ni imágenes remotas arbitrarias; tipografía, espacio y datos.
 - Incluye criterios de accesibilidad y comportamiento funcional para que el resultado no se quede en una maqueta.
 - Evita copiar contenido de las referencias, inventar cifras o testimonios y repetir patrones que no correspondan al proyecto.

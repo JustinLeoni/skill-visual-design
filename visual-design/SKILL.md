@@ -24,10 +24,10 @@ Tiene prioridad cuando el usuario adjunta referencias de diseño o pide una est�
 
 Este es el estándar de la skill y se aplica **siempre**, salvo que el usuario pida explícitamente lo contrario o exista un sistema de marca que lo sustituya.
 
-- **Color:** solo **blanco, gris y negro**, en neutros puros y sin tinte. Sin colores de acento y sin tonos crema, beige o cálidos. La jerarquía se crea con contraste, escala y espacio, no con color.
-- **Fondos:** blanco o gris neutro. Las superficies grises sirven para agrupar, nunca para decorar con color. Nada de fondos tintados.
-- **Separación:** sin líneas finas. No uses bordes de 1px, separadores ni hairlines para dividir secciones, listas o tarjetas, ni rejillas dibujadas con líneas. Separa con **espacio** y, si necesitas agrupar, usa una superficie de fondo (gris).
-- **Tipografía:** familias **sans normales y minimalistas** (por ejemplo Inter, system-ui, Helvetica, Arial). Sin serif, sin cursivas y sin display decorativos.
+- **Color:** solo **blanco, gris y negro**, en neutros puros y sin tinte. Sin colores de acento y sin tonos crema, beige o cálidos.
+- **Todo plano:** sin sombras, sin bordes y sin líneas (ni separadores, ni rejillas dibujadas, ni subrayados decorativos). Las secciones y bloques se distinguen **solo por el tono** del fondo: blanco, gris o negro.
+- **Jerarquía por peso y tono:** usa una sola familia sans. Para titulares y textos grandes sube el **peso** a **bold o heavy** (700–900) con tracking negativo. La diferencia entre un titular y su continuación se logra con **peso y tono de gris**, no con otra familia ni con color.
+- **Tipografía:** familias **sans normales y minimalistas** (Inter, system-ui, Helvetica, Arial). Sin serif, sin cursivas y sin display decorativos.
 - **Marca:** si no existe un logotipo, **no inventes uno**; deja el espacio sin logo y usa el nombre en texto si hace falta identidad.
 - **Imagen:** si no hay imágenes reales, no uses placeholders genéricos ni imágenes remotas arbitrarias; trabaja con tipografía, espacio y datos.
 
@@ -37,7 +37,7 @@ Solo si el usuario pide color, serif o una estética concreta aplicas esa direcc
 
 1. **Diseña desde la intención.** Antes de maquetar, identifica audiencia, acción principal, contenido imprescindible, personalidad de marca, restricciones técnicas y dispositivo objetivo. No inventes requisitos ni copies texto de las imágenes de referencia.
 2. **Lee las referencias visualmente.** Separa lo estructural de lo accidental: jerarquía, composición, escala, ritmo, densidad, tratamiento de imagen, contraste y microdetalles. Si varias imágenes muestran estilos diferentes, sintetiza rasgos compatibles y selecciona un sistema coherente según el encargo.
-3. **Haz que la tipografía dirija.** Usa titulares expresivos con tamaño, anchura, interlineado y saltos de línea controlados; combina familias con criterio (una sans contemporánea con una monoespaciada discreta para etiquetas y datos, o una serif con carácter cuando la marca lo pida). No fuerces el mismo patrón tipográfico en todos los proyectos.
+3. **Haz que la tipografía dirija.** Usa titulares expresivos con tamaño, **peso** (bold/heavy) y saltos de línea controlados. Escala y peso antes que familias: por defecto una sola sans neutra, y reserva segundas familias o serif para cuando la marca lo pida.
 4. **Compón con tensión y aire.** Combina grillas alineadas con asimetría medida, espacios negativos, elementos fuera del eje y escalas contrastantes. El espacio vacío debe crear jerarquía; no se rellena por defecto.
 5. **Usa imagen con propósito.** Favorece fotografía, ilustración o gráficos que respondan al proyecto. Elige proporciones y recortes intencionales, calidad alta y consistencia tonal. No uses placeholders genéricos ni una imagen remota arbitraria como si fuera contenido real.
 6. **Controla el color.** Por defecto, **solo blanco, gris y negro** (ver *Sistema visual por defecto*). Añade color únicamente si el usuario lo pide o una marca lo exige, y entonces define un sistema (superficie, texto, acento, estados); no impongas el mismo acento a todos los proyectos.
@@ -100,6 +100,7 @@ Son rangos de partida, no mandatos. Prioriza el viewport y el contenido reales.
 - No inventes logotipos, isotipos ni marcas si el proyecto no tiene uno; deja el espacio sin logo.
 - No uses fondos ni paletas cálidas o tintadas (crema, beige, arena, marfil): el fondo es blanco o gris neutro.
 - No dibujes separadores ni rejillas con líneas finas (bordes de 1px); separa con espacio y, para agrupar, usa una superficie de fondo.
+- No uses sombras, bordes ni subrayados decorativos: **todo plano**. El tono del fondo (blanco / gris / negro) es el único separador.
 - No uses serif, cursivas, display decorativos ni color de acento cuando el brief no lo pide (ver *Sistema visual por defecto*).
 - No uses frases, marcas, personas, métricas o contenido de las capturas como si pertenecieran al proyecto.
 
