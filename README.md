@@ -24,12 +24,10 @@ La selección de dirección puede ser tipográfica, inmersiva con fotografía, m
 
 ```text
 estudio-editorial/
-├── SKILL.md            # Instrucciones de la skill (agnósticas al agente)
-└── agents/
-    └── openai.yaml     # Metadatos opcionales del formato agents/*.yaml
+└── SKILL.md            # Instrucciones de la skill (agnósticas al agente)
 ```
 
-El núcleo de la skill es `SKILL.md`. El archivo `agents/openai.yaml` es un metadato opcional para plataformas que lo reconozcan; si el agente no lo usa, puede ignorarse sin afectar la skill.
+El núcleo de la skill es `SKILL.md`: un único archivo Markdown con frontmatter (`name`, `description`) y las instrucciones. No necesita ningún otro archivo para funcionar.
 
 ## Instalación mediante un prompt (recomendado)
 
@@ -40,7 +38,7 @@ Instala y configura en este entorno la skill `estudio-editorial` desde la carpet
 
 1. Lee SKILL.md y la estructura de la skill.
 2. Copia la carpeta completa de la skill al directorio persistente de skills que este agente carga realmente. Detecta la ruta correcta en lugar de asumirla; comprueba las convenciones documentadas del entorno (por ejemplo, un directorio de skills bajo el home del agente o una variable de entorno que lo defina). Si no puedes determinar la ruta con certeza, pregunta antes de escribir.
-3. Verifica que la copia contiene SKILL.md y la carpeta agents/.
+3. Verifica que la copia contiene SKILL.md.
 4. Para que la skill se considere automáticamente en trabajos futuros de diseño, añade una regla breve al archivo de instrucciones persistentes globales que este agente realmente lea (por ejemplo un AGENTS.md global u otro archivo equivalente de su entorno): "Para diseñar o implementar interfaces, consulta y aplica la skill estudio-editorial antes de decidir la dirección visual; adapta sus principios al brief, a la marca y a las referencias del proyecto."
 5. No reemplaces instrucciones existentes: añade la regla sin borrar contenido.
 6. Al terminar, indica exactamente qué rutas usaste (carpeta de la skill y archivo de instrucciones) y cómo se activará la skill en futuras sesiones de este entorno.
@@ -61,7 +59,7 @@ Las instrucciones persistentes ayudan al agente a recordar la skill en ese entor
 ## Compatibilidad
 
 - **Núcleo:** `SKILL.md` con frontmatter (`name`, `description`). Es el formato común de skills para agentes.
-- **Metadatos opcionales:** `agents/openai.yaml`, para plataformas que reconozcan ese formato. Opcional.
+- **Sin archivos extra:** la skill es un único Markdown. No depende de metadatos de ningún proveedor.
 
 La skill es texto plano y portable: puede usarse tal cual en cualquier agente que lea instrucciones en Markdown.
 
