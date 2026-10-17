@@ -4,6 +4,8 @@ Skill para agentes de IA que diseñan, implementan y revisan interfaces digitale
 
 Es una skill **agnóstica al agente**: no depende de un proveedor, modelo ni herramienta concreta. Funciona en cualquier agente que pueda leer una carpeta de skill (un `SKILL.md` de instrucciones) y mantener instrucciones persistentes. El núcleo es portable y está en español.
 
+**Página web:** https://justinleoni.github.io/skill-visual-design/ (fuente en [`docs/`](docs/)).
+
 Cubre distintos tipos de diseño, no un estilo único:
 
 - **Web y marketing:** landing pages, sitios corporativos, portafolios, páginas de producto.
