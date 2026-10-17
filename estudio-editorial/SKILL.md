@@ -1,11 +1,11 @@
 ---
-name: diseno-editorial-premium
+name: estudio-editorial
 description: Diseña y desarrolla interfaces web, landing pages, sitios, portafolios y productos digitales con dirección editorial premium basada en composición tipográfica, fotografía cuidada, asimetría, espacio y contraste. Actívalo al crear o rediseñar una interfaz, especialmente si el usuario comparte referencias de este lenguaje visual; adapta el sistema a la marca y al propósito.
 metadata:
   short-description: Diseño editorial web premium y adaptable
 ---
 
-# Diseño editorial premium
+# Estudio editorial
 
 Convierte el brief y las referencias visuales en una interfaz web distintiva, legible y funcional. El lenguaje compartido es editorial: jerarquía tipográfica clara, composición intencional, imágenes con carácter, detalles precisos y ritmo entre contenido y espacio. No conviertas las capturas en una plantilla rígida; identifica qué hace especial a cada referencia y elige la dirección adecuada para el producto.
 

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Estudio editorial"
+  short_description: "Interfaces web editoriales, visuales y funcionales"
+  default_prompt: "Usa $estudio-editorial para diseñar esta interfaz según el brief y sus referencias."
+policy:
+  allow_implicit_invocation: true
