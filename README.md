@@ -1,67 +1,87 @@
-# Estudio Editorial
+# Skill: Visual Design
 
-Skill para agentes de IA que diseñan e implementan páginas web e interfaces con una dirección editorial premium: tipografía con carácter, composición intencional, fotografía cuidada, espacio, contraste y detalles precisos.
+Skill para agentes de IA que diseñan, implementan y revisan interfaces digitales con dirección visual premium: jerarquía tipográfica, composición intencional, color y contraste, imagen cuidada, espacio y detalle.
 
-Es una skill **agnóstica al agente**: no depende de un proveedor, modelo ni herramienta concreta. Funciona en cualquier agente que pueda leer una carpeta de skill (un `SKILL.md` de instrucciones) y mantener instrucciones persistentes.
+Es una skill **agnóstica al agente**: no depende de un proveedor, modelo ni herramienta concreta. Funciona en cualquier agente que pueda leer una carpeta de skill (un `SKILL.md` de instrucciones) y mantener instrucciones persistentes. El núcleo es portable y está en español.
 
-La skill toma como inspiración un conjunto de referencias de portafolios creativos, arquitectura, inmobiliaria, turismo, producto digital y sitios corporativos. No impone una plantilla única. Enseña al agente a identificar el lenguaje de cada referencia y adaptarlo a la marca, contenido, función y dispositivo del proyecto.
+Cubre distintos tipos de diseño, no un estilo único:
+
+- **Web y marketing:** landing pages, sitios corporativos, portafolios, páginas de producto.
+- **Producto y datos:** dashboards, paneles de administración, interfaces de cuenta, herramientas.
+- **Móvil:** apps iOS, Android o multiplataforma.
+- **Contenido y presentación:** publicaciones, revisiones, diapositivas, material editorial.
 
 ## Qué hace
 
 - Convierte un brief y capturas de referencia en decisiones de composición y un sistema visual coherente.
-- Orienta la creación y el rediseño de landing pages, sitios, portafolios, páginas de producto e interfaces.
+- Orienta la creación y el rediseño de cualquier interfaz, del primer viewport a la entrega.
 - Guía tipografía, grillas, color, fotografía, ritmo, componentes, responsive y movimiento.
+- Ofrece direcciones visuales reutilizables (editorial, inmersiva, modular de producto, contenido, técnica, expresiva).
 - Incluye criterios de accesibilidad y comportamiento funcional para que el resultado no se quede en una maqueta.
 - Evita copiar contenido de las referencias, inventar cifras o testimonios y repetir patrones que no correspondan al proyecto.
 
 ## Cómo funciona
 
-El agente carga `SKILL.md` cuando el trabajo es de diseño o implementación de interfaces, o cuando se invoca directamente. Primero entiende el proyecto y las referencias; luego selecciona una dirección visual, define reglas reutilizables y construye la interfaz adaptada al contenido y a distintos tamaños de pantalla. Finalmente revisa legibilidad, accesibilidad, interacción y acabado en la vista disponible.
+El agente carga `SKILL.md` cuando el trabajo es de diseño o implementación de interfaces, o cuando se invoca directamente. Primero entiende el proyecto y las referencias; luego elige una dirección visual, define reglas reutilizables y construye la interfaz adaptada al contenido y a distintos tamaños de pantalla. Finalmente revisa legibilidad, accesibilidad, interacción y acabado en la vista disponible.
 
-La selección de dirección puede ser tipográfica, inmersiva con fotografía, modular de producto o editorial de contenido. Son rutas orientativas: el agente debe conservar una identidad común y elegir según el contexto.
+Material de apoyo en `references/`:
+
+- `references/direcciones-visuales.md` — arquetipos de dirección y cuándo aplicarlos.
+- `references/checklist-entrega.md` — revisión de jerarquía, sistema, comportamiento, accesibilidad, responsive y contenido.
 
 ## Estructura
 
 ```text
-estudio-editorial/
-└── SKILL.md            # Instrucciones de la skill (agnósticas al agente)
+visual-design/
+├── SKILL.md                              # Instrucciones (agnósticas al agente)
+├── metadata.json                         # Versión, resumen y referencias
+└── references/
+    ├── direcciones-visuales.md           # Direcciones visuales
+    └── checklist-entrega.md              # Checklist de entrega
 ```
 
-El núcleo de la skill es `SKILL.md`: un único archivo Markdown con frontmatter (`name`, `description`) y las instrucciones. No necesita ningún otro archivo para funcionar.
+El núcleo es `SKILL.md` (frontmatter `name` y `description` + instrucciones). `metadata.json` y `references/` son apoyo: no son obligatorios para que el agente cargue la skill, pero enriquecen su uso.
 
 ## Instalación mediante un prompt (recomendado)
 
 Clona o descarga este repositorio y envía el siguiente prompt al agente que tenga acceso a esos archivos. El prompt es genérico: el agente debe descubrir en su propio entorno cuál es el directorio de skills y el archivo de instrucciones persistentes que realmente lee.
 
 ```text
-Instala y configura en este entorno la skill `estudio-editorial` desde la carpeta `estudio-editorial` de este repositorio.
+Instala y configura en este entorno la skill `visual-design` desde la carpeta `visual-design` de este repositorio.
 
-1. Lee SKILL.md y la estructura de la skill.
+1. Lee SKILL.md, metadata.json y la carpeta references/.
 2. Copia la carpeta completa de la skill al directorio persistente de skills que este agente carga realmente. Detecta la ruta correcta en lugar de asumirla; comprueba las convenciones documentadas del entorno (por ejemplo, un directorio de skills bajo el home del agente o una variable de entorno que lo defina). Si no puedes determinar la ruta con certeza, pregunta antes de escribir.
-3. Verifica que la copia contiene SKILL.md.
-4. Para que la skill se considere automáticamente en trabajos futuros de diseño, añade una regla breve al archivo de instrucciones persistentes globales que este agente realmente lea (por ejemplo un AGENTS.md global u otro archivo equivalente de su entorno): "Para diseñar o implementar interfaces, consulta y aplica la skill estudio-editorial antes de decidir la dirección visual; adapta sus principios al brief, a la marca y a las referencias del proyecto."
+3. Verifica que la copia contiene SKILL.md y la carpeta references/.
+4. Para que la skill se considere automáticamente en trabajos futuros de diseño, añade una regla breve al archivo de instrucciones persistentes globales que este agente realmente lea (por ejemplo un AGENTS.md global u otro archivo equivalente de su entorno): "Para diseñar, implementar o revisar interfaces, consulta y aplica la skill visual-design antes de decidir la dirección visual; adapta sus principios al brief, a la marca y a las referencias del proyecto."
 5. No reemplaces instrucciones existentes: añade la regla sin borrar contenido.
 6. Al terminar, indica exactamente qué rutas usaste (carpeta de la skill y archivo de instrucciones) y cómo se activará la skill en futuras sesiones de este entorno.
 
 No afirmes que la regla aplica a otros agentes, cuentas o dispositivos fuera de este entorno.
 ```
 
-El prompt pide instalar la skill y añadir una instrucción persistente a la configuración que el agente realmente carga. La ruta exacta varía entre herramientas y proveedores. La instalación de la carpeta hace disponible la skill; la instrucción persistente hace que el agente la considere automáticamente en tareas relevantes cuando su plataforma admite esa configuración.
+La ruta exacta varía entre herramientas y proveedores. La instalación de la carpeta hace disponible la skill; la instrucción persistente hace que el agente la considere automáticamente en tareas relevantes cuando su plataforma admite esa configuración.
 
 ## Instalación manual (cualquier agente)
 
-1. Copia la carpeta `estudio-editorial/` al directorio de skills persistente que use tu agente. No hay una ruta universal: usa la que documente tu herramienta o la que el propio agente detecte en su entorno.
+1. Copia la carpeta `visual-design/` al directorio de skills persistente que use tu agente. No hay una ruta universal: usa la que documente tu herramienta o la que el propio agente detecte en su entorno.
 2. Para activar su consideración automática, añade la regla breve (la del prompt de instalación) al archivo de instrucciones persistentes globales que tu agente lea —por ejemplo un `AGENTS.md` global u otro archivo equivalente—, conservando las instrucciones existentes.
 3. Inicia una tarea de diseño o invoca la skill directamente con su nombre para que se cargue.
 
 Las instrucciones persistentes ayudan al agente a recordar la skill en ese entorno. Ninguna skill o prompt puede garantizar que todos los agentes, proveedores o futuras sesiones la obedezcan universalmente.
 
+## Releases
+
+Cada release incluye la skill empaquetada y lista para instalar:
+
+- `visual-design-vX.Y.Z.zip` — carpeta completa (`SKILL.md`, `metadata.json`, `references/`) para descomprimir en el directorio de skills del agente.
+
+La versión también consta en `visual-design/metadata.json`.
+
 ## Compatibilidad
 
 - **Núcleo:** `SKILL.md` con frontmatter (`name`, `description`). Es el formato común de skills para agentes.
-- **Sin archivos extra:** la skill es un único Markdown. No depende de metadatos de ningún proveedor.
-
-La skill es texto plano y portable: puede usarse tal cual en cualquier agente que lea instrucciones en Markdown.
+- **Apoyo:** `metadata.json` y `references/`, opcionales pero útiles.
+- **Sin dependencias:** la skill es texto plano. No depende de metadatos de ningún proveedor.
 
 ## Licencia
 
