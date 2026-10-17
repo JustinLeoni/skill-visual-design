@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>visual-design — Skill de diseño para agentes de IA</title>
+<meta name="description" content="visual-design es una skill portable que enseña a un agente de IA a diseñar interfaces con dirección: páginas web, dashboards, apps y presentaciones. Agnóstica al agente, en español, MIT.">
+<meta name="theme-color" content="#F4F1EA">
+
+<meta property="og:title" content="visual-design — Skill de diseño para agentes de IA">
+<meta property="og:description" content="Una skill portable que enseña a un agente a diseñar interfaces con dirección: jerarquía, composición, color, imagen y detalle.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://justinleoni.github.io/skill-visual-design/">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2314110F'/%3E%3Ctext x='6' y='23' font-family='Georgia,serif' font-size='19' fill='%23F4F1EA'%3EV%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+
+<div style="position:relative;z-index:60;background:#0A0A0A;color:#fff;font:500 13px/1.4 system-ui,-apple-system,'Segoe UI',sans-serif;padding:10px 16px;text-align:center">
+  Versión 1 · diseño editorial (serif + fondo crema) — archivada · <a href="../" style="color:#fff;text-decoration:underline">ver versión actual</a>
+</div>
+
+<header class="nav" id="top">
+  <div class="wrap nav__inner">
+    <a class="brand" href="#top">
+      <span class="brand__mark" aria-hidden="true">V</span>
+      <span class="brand__name">visual&#8209;design</span>
+    </a>
+    <nav class="nav__links" aria-label="Secciones">
+      <a href="#principios">Principios</a>
+      <a href="#direcciones">Direcciones</a>
+      <a href="#instalacion">Instalación</a>
+    </nav>
+    <a class="btn btn--sm" href="https://github.com/JustinLeoni/skill-visual-design/releases/latest/download/visual-design-v1.0.0.zip">Descargar</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero__grid">
+      <p class="eyebrow">Skill para agentes de IA · v1.0.0 · MIT</p>
+      <h1 class="hero__title">
+        Enseña a tu agente a diseñar interfaces que
+        <em>no parecen plantillas.</em>
+      </h1>
+      <div class="hero__meta">
+        <p class="hero__lede">
+          <span class="lead-drop">v</span>isual-design es una skill portable que guía a un agente de IA,
+          de principio a fin, en el diseño de páginas web, dashboards, apps y
+          presentaciones: jerarquía, composición, color, imagen y detalle.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--lg" href="https://github.com/JustinLeoni/skill-visual-design/releases/latest/download/visual-design-v1.0.0.zip">
+            Descargar la skill
+            <span class="btn__tag">.zip</span>
+          </a>
+          <a class="link-arrow" href="https://github.com/JustinLeoni/skill-visual-design">Ver en GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+        <ul class="facts">
+          <li><b>1</b> archivo núcleo</li>
+          <li><b>6</b> direcciones visuales</li>
+          <li><b>0</b> dependencias</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUÉ ES -->
+  <section class="band" id="que-es">
+    <div class="wrap band__grid">
+      <h2 class="kicker">Qué es</h2>
+      <div class="prose">
+        <p class="lede">
+          Una <strong>skill</strong> es un archivo de instrucciones que un agente de IA carga
+          cuando la tarea encaja. <strong>visual-design</strong> es un único
+          <code>SKILL.md</code> —con referencias de apoyo— escrito en español y sin
+          dependencias: funciona en cualquier agente que lea instrucciones en Markdown.
+        </p>
+        <p>
+          No impone un estilo. Enseña a identificar qué hace especial a cada referencia
+          visual y a traducirlo en decisiones concretas para una marca, un contenido y un
+          dispositivo. Sirve igual para una landing page, un panel de datos, una app o una
+          presentación.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUÉ HACE -->
+  <section class="band band--tint" id="que-hace">
+    <div class="wrap band__grid">
+      <h2 class="kicker">Qué hace</h2>
+      <ul class="dolist">
+        <li>Convierte un brief y capturas de referencia en un sistema visual coherente.</li>
+        <li>Orienta la creación y el rediseño de web, producto y datos, móvil y contenido.</li>
+        <li>Guía tipografía, grilla, color, imagen, ritmo, componentes, responsive y movimiento.</li>
+        <li>Propone seis direcciones visuales reutilizables y cuándo aplicarlas.</li>
+        <li>Incluye accesibilidad y comportamiento real: no se queda en una maqueta.</li>
+        <li>Evita copiar las referencias, inventar cifras o repetir patrones ajenos al proyecto.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PRINCIPIOS -->
+  <section class="band" id="principios">
+    <div class="wrap">
+      <div class="band__grid">
+        <h2 class="kicker">Principios</h2>
+        <p class="lede lede--tight">Diez reglas que el agente aplica antes de decidir nada visual.</p>
+      </div>
+      <ol class="numbers">
+        <li><h3>Diseña desde la intención.</h3><p>Antes de maquetar: audiencia, acción principal, contenido imprescindible, marca y restricciones.</p></li>
+        <li><h3>Lee las referencias visualmente.</h3><p>Separa lo estructural de lo accidental: jerarquía, escala, ritmo, densidad, imagen, contraste.</p></li>
+        <li><h3>Haz que la tipografía dirija.</h3><p>Titulares expresivos, escalas y saltos de línea controlados, familias combinadas con criterio.</p></li>
+        <li><h3>Compón con tensión y aire.</h3><p>Grilla y asimetría medida, espacio negativo, escalas contrastantes. El vacío crea jerarquía.</p></li>
+        <li><h3>Usa imagen con propósito.</h3><p>Proporciones y recortes deliberados, calidad y consistencia tonal. Nunca placeholders genéricos.</p></li>
+        <li><h3>Controla el color.</h3><p>Base neutral y un sistema claro: superficie, texto, acento y estados. Color solo si lo justifica el proyecto.</p></li>
+        <li><h3>Cada bloque tiene una función.</h3><p>Nada de secciones de relleno: métricas, testimonios o FAQ solo si el brief los respalda.</p></li>
+        <li><h3>Diseña componentes como familia.</h3><p>Botones, tarjetas, tablas y formularios comparten reglas visuales de verdad.</p></li>
+        <li><h3>El movimiento acompaña.</h3><p>Transiciones breves, estados claros y respeto por <code>prefers-reduced-motion</code>.</p></li>
+        <li><h3>La estética no desplaza la calidad.</h3><p>Contraste WCAG AA, foco visible, teclado, HTML semántico y diseño responsive.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- DIRECCIONES -->
+  <section class="band band--tint" id="direcciones">
+    <div class="wrap">
+      <div class="band__grid">
+        <h2 class="kicker">Direcciones</h2>
+        <p class="lede lede--tight">Seis arquetipos para arrancar. Se elige uno —o se mezclan dos con moderación— según el producto y el brief.</p>
+      </div>
+      <div class="dirs">
+        <article class="dir"><h3>Editorial tipográfica</h3><p>Titulares a gran escala, composición descentrada, microtipografía y mucho espacio.</p><span class="dir__fit">Portafolios · estudios · presentaciones</span></article>
+        <article class="dir"><h3>Inmersiva cinematográfica</h3><p>Fotografía o video a gran escala, overlays discretos y tipografía amplia.</p><span class="dir__fit">Arquitectura · hospitalidad · marcas</span></article>
+        <article class="dir"><h3>Modular de producto</h3><p>Superficies limpias, grilla y módulos definidos, controles precisos.</p><span class="dir__fit">SaaS · catálogos · cuentas</span></article>
+        <article class="dir"><h3>Editorial de contenido</h3><p>Tipografía legible, columnas medidas, fotografías con pies y navegación de lectura.</p><span class="dir__fit">Revistas · noticias · recursos</span></article>
+        <article class="dir"><h3>Técnica / utilitaria</h3><p>Densidad alta, datos precisos, tablas y estados claros, monoespaciada para valores.</p><span class="dir__fit">Dashboards · herramientas · paneles</span></article>
+        <article class="dir"><h3>Expresiva / brutalista</h3><p>Contraste extremo, tipografía a gran escala, color plano y retícula visible.</p><span class="dir__fit">Campañas · autor · cultura</span></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUÉ INCLUYE -->
+  <section class="band" id="incluye">
+    <div class="wrap band__grid">
+      <h2 class="kicker">Qué incluye</h2>
+      <div class="prose">
+        <pre class="tree" aria-label="Estructura de archivos">visual-design/
+├── SKILL.md                      instrucciones (núcleo)
+├── metadata.json                 versión, resumen, referencias
+└── references/
+    ├── direcciones-visuales.md   los seis arquetipos
+    └── checklist-entrega.md      revisión de accesibilidad y acabado</pre>
+        <p>
+          El núcleo es <code>SKILL.md</code>: frontmatter <code>name</code> y
+          <code>description</code> más las instrucciones. <code>metadata.json</code> y
+          <code>references/</code> enriquecen la skill, pero no son obligatorios para
+          cargarla.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSTALACIÓN -->
+  <section class="band band--dark" id="instalacion">
+    <div class="wrap band__grid">
+      <h2 class="kicker kicker--light">Instalación</h2>
+      <div class="prose prose--light">
+        <p class="lede">
+          Pega este prompt en tu agente. El propio prompt pide descargar el repositorio
+          e instalar la skill; no necesitas preparar archivos.
+        </p>
+
+        <div class="code">
+          <div class="code__bar">
+            <span class="code__label">prompt corto</span>
+            <button class="copy" type="button" data-copy="#p-short">Copiar</button>
+          </div>
+          <pre id="p-short">Descarga el repositorio https://github.com/JustinLeoni/skill-visual-design, instala su carpeta `visual-design` en el directorio de skills persistente que cargas realmente (detéctalo; si no lo conoces, pregunta), añade a tus instrucciones persistentes globales la regla "para diseñar, implementar o revisar interfaces, consulta y aplica la skill visual-design antes de decidir la dirección visual", y dime las rutas que usaste.</pre>
+        </div>
+
+        <details class="more">
+          <summary>Prompt completo (paso a paso)</summary>
+          <div class="code">
+            <div class="code__bar">
+              <span class="code__label">prompt detallado</span>
+              <button class="copy" type="button" data-copy="#p-long">Copiar</button>
+            </div>
+            <pre id="p-long">Instala y configura en este entorno la skill `visual-design`, que vive en este repositorio público de GitHub:
+https://github.com/JustinLeoni/skill-visual-design
+
+1. Accede al repositorio y descárgalo por tu cuenta: usa `git clone` a un directorio temporal. Si no tienes git o acceso a la red, descarga el zip del release más reciente y descomprímelo. Si tampoco puedes acceder a la red, pide al usuario el enlace o los archivos.
+2. Dentro de lo descargado, localiza la carpeta `visual-design/` (SKILL.md, metadata.json, references/). Léela entera.
+3. Copia esa carpeta completa al directorio persistente de skills que este agente carga realmente. Detecta la ruta correcta en lugar de asumirla. Si no puedes determinarla con certeza, pregunta antes de escribir.
+4. Verifica que la copia contiene SKILL.md y la carpeta references/.
+5. Añade a tus instrucciones persistentes globales la regla: "Para diseñar, implementar o revisar interfaces, consulta y aplica la skill visual-design antes de decidir la dirección visual."
+6. No reemplaces instrucciones existentes; añade la regla sin borrar contenido.
+7. Elimina el clon o la descarga temporal al terminar.
+8. Indica qué rutas usaste y cómo se activará la skill en futuras sesiones.</pre>
+          </div>
+        </details>
+
+        <p class="fineprint">
+          Manual: descarga el zip, descomprímelo y copia <code>visual-design/</code> al
+          directorio de skills de tu agente.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DESCARGA -->
+  <section class="cta" id="descarga">
+    <div class="wrap cta__inner">
+      <h2 class="cta__title">Lista para tu agente.</h2>
+      <p class="cta__sub">Un <code>SKILL.md</code>, dos referencias y nada más. Agnóstica al agente, en español, bajo licencia MIT.</p>
+      <div class="hero__actions hero__actions--center">
+        <a class="btn btn--lg" href="https://github.com/JustinLeoni/skill-visual-design/releases/latest/download/visual-design-v1.0.0.zip">
+          Descargar visual-design
+          <span class="btn__tag">v1.0.0 · .zip</span>
+        </a>
+        <a class="link-arrow" href="https://github.com/JustinLeoni/skill-visual-design">Repositorio en GitHub <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__inner">
+    <span class="foot__brand">visual&#8209;design</span>
+    <span class="foot__note">Hecho con la propia skill. Licencia MIT.</span>
+    <span class="foot__links">
+      <a href="https://github.com/JustinLeoni/skill-visual-design">GitHub</a>
+      <a href="https://github.com/JustinLeoni/skill-visual-design/releases">Releases</a>
+      <a href="https://github.com/JustinLeoni/skill-visual-design/blob/main/LICENSE">Licencia</a>
+    </span>
+  </div>
+</footer>
+
+<script src="app.js" defer></script>
+</body>
+</html>

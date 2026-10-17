@@ -4,7 +4,7 @@ Skill para agentes de IA que diseñan, implementan y revisan interfaces digitale
 
 Es una skill **agnóstica al agente**: no depende de un proveedor, modelo ni herramienta concreta. Funciona en cualquier agente que pueda leer una carpeta de skill (un `SKILL.md` de instrucciones) y mantener instrucciones persistentes. El núcleo es portable y está en español.
 
-**Página web:** https://justinleoni.github.io/skill-visual-design/ (fuente en [`docs/`](docs/)).
+**Página web:** https://justinleoni.github.io/skill-visual-design/ (fuente en [`docs/`](docs/)). La versión 1 de la web está archivada en [`docs/v1/`](docs/v1/) → https://justinleoni.github.io/skill-visual-design/v1/
 
 Cubre distintos tipos de diseño, no un estilo único:
 
@@ -19,7 +19,16 @@ Cubre distintos tipos de diseño, no un estilo único:
 - Orienta la creación y el rediseño de cualquier interfaz, del primer viewport a la entrega.
 - Guía tipografía, grillas, color, fotografía, ritmo, componentes, responsive y movimiento.
 - Ofrece direcciones visuales reutilizables (editorial, inmersiva, modular de producto, contenido, técnica, expresiva).
-- Si el brief no especifica estilo, aplica **predeterminados**: monocromo blanco y negro, tipografía solo sans (sin serif ni cursivas) y sin logotipo inventado.
+- Aplica **siempre** un sistema visual neutro: solo blanco, gris y negro; tipografía sans minimalista; sin logotipo inventado.
+
+## Sistema visual por defecto
+
+La skill aplica este sistema por defecto, salvo que el usuario pida otra cosa:
+
+- **Color:** solo **blanco, gris y negro**, en neutros puros y sin tinte. Sin colores de acento ni fondos crema, beige o tintados.
+- **Tipografía:** sans **normal y minimalista** (Inter, system-ui, Helvetica, Arial). Sin serif, sin cursivas y sin display decorativos.
+- **Marca:** si el proyecto no tiene logotipo, no se inventa uno.
+- **Imagen:** sin placeholders genéricos ni imágenes remotas arbitrarias; tipografía, espacio y datos.
 - Incluye criterios de accesibilidad y comportamiento funcional para que el resultado no se quede en una maqueta.
 - Evita copiar contenido de las referencias, inventar cifras o testimonios y repetir patrones que no correspondan al proyecto.
 

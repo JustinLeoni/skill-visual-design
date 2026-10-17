@@ -20,16 +20,17 @@ Convierte el brief y las referencias visuales en una interfaz distintiva, legibl
 
 Tiene prioridad cuando el usuario adjunta referencias de diseño o pide una estética concreta (editorial, minimalista, premium, de estudio creativo, técnica, brutalista, cinematográfica…). Si el usuario da un sistema visual propio, conserva su identidad y aplica estos principios solo donde encajen.
 
-## Predeterminados
+## Sistema visual por defecto
 
-Cuando el brief **no especifica** estilo, color, tipografía ni marca, aplica estos valores por defecto en lugar de inventarlos:
+Este es el estándar de la skill y se aplica **siempre**, salvo que el usuario pida explícitamente lo contrario o exista un sistema de marca que lo sustituya.
 
-- **Color:** monocromático, blanco y negro con una escala de grises neutra. Sin color de acento salvo que el proyecto lo justifique.
-- **Tipografía:** solo familias **sans** (incluida una monoespaciada para datos, códigos y etiquetas si aporta). No uses serif ni cursivas por defecto.
-- **Marca:** si no existe un logotipo, **no inventes uno**. Deja el espacio sin logo; si hace falta identidad, usa el nombre del proyecto en texto.
-- **Imagen:** si no hay imágenes reales, no coloques placeholders genéricos ni imágenes remotas arbitrarias; trabaja con tipografía, espacio y datos.
+- **Color:** solo **blanco, gris y negro**, en neutros puros y sin tinte. Sin colores de acento y sin tonos crema, beige o cálidos. La jerarquía se crea con contraste, escala y espacio, no con color.
+- **Fondos:** blanco o gris neutro. Las superficies grises sirven para agrupar, nunca para decorar con color. Nada de fondos tintados.
+- **Tipografía:** familias **sans normales y minimalistas** (por ejemplo Inter, system-ui, Helvetica, Arial). Sin serif, sin cursivas y sin display decorativos.
+- **Marca:** si no existe un logotipo, **no inventes uno**; deja el espacio sin logo y usa el nombre en texto si hace falta identidad.
+- **Imagen:** si no hay imágenes reales, no uses placeholders genéricos ni imágenes remotas arbitrarias; trabaja con tipografía, espacio y datos.
 
-Estos valores ceden ante cualquier indicación del usuario, referencia visual o sistema de marca existente.
+Solo si el usuario pide color, serif o una estética concreta aplicas esa dirección (ver *Direcciones visuales*); fuera de ese caso, mantén siempre este sistema neutro y minimalista.
 
 ## Principios
 
@@ -38,7 +39,7 @@ Estos valores ceden ante cualquier indicación del usuario, referencia visual o 
 3. **Haz que la tipografía dirija.** Usa titulares expresivos con tamaño, anchura, interlineado y saltos de línea controlados; combina familias con criterio (una sans contemporánea con una monoespaciada discreta para etiquetas y datos, o una serif con carácter cuando la marca lo pida). No fuerces el mismo patrón tipográfico en todos los proyectos.
 4. **Compón con tensión y aire.** Combina grillas alineadas con asimetría medida, espacios negativos, elementos fuera del eje y escalas contrastantes. El espacio vacío debe crear jerarquía; no se rellena por defecto.
 5. **Usa imagen con propósito.** Favorece fotografía, ilustración o gráficos que respondan al proyecto. Elige proporciones y recortes intencionales, calidad alta y consistencia tonal. No uses placeholders genéricos ni una imagen remota arbitraria como si fuera contenido real.
-6. **Controla el color.** Parte de una base neutral clara u oscura y define un sistema (superficie, texto, acento, estados). Añade color solo si la marca, el contenido o la imagen lo justifican; no impongas el mismo acento a todos los proyectos.
+6. **Controla el color.** Por defecto, **solo blanco, gris y negro** (ver *Sistema visual por defecto*). Añade color únicamente si el usuario lo pide o una marca lo exige, y entonces define un sistema (superficie, texto, acento, estados); no impongas el mismo acento a todos los proyectos.
 7. **Cada bloque tiene una función.** Incluye navegación, hero, contenido, prueba y cierre según las necesidades reales. Una vista no necesita métricas, testimonios, FAQ o categorías si el brief no las respalda.
 8. **Diseña componentes como familia.** Botones, etiquetas, tarjetas, tablas, controles, formularios, radios, bordes y estados deben compartir reglas visuales. Evita componentes que parezcan extraídos de una plantilla.
 9. **El movimiento acompaña.** Usa transiciones breves y estados hover/focus claros. Añade animación, scroll effects o interacción solo cuando mejoren la comprensión o el carácter; respeta `prefers-reduced-motion`.
@@ -66,7 +67,7 @@ Elige una dirección principal o mezcla dos con moderación:
 - **Técnica / utilitaria:** densidad alta, datos precisos, tablas y estados claros, tipografía monoespaciada para valores. Dashboards, herramientas, paneles de administración.
 - **Expresiva / brutalista:** contraste extremo, tipografía a gran escala, color plano, bordes duros o retícula visible. Declaraciones de marca, campañas, sitios de autor.
 
-Estas direcciones no son plantillas: ajusta densidad, interacción, color e imagen al contenido, la marca y el dispositivo. Detalle y criterios de elección en `references/direcciones-visuales.md`. Si el brief no pide una dirección concreta, parte de los **Predeterminados** (monocromo, sans y sin logo inventado). No mezcles una home inmobiliaria con un portfolio tipográfico sin una razón clara de marca.
+Estas direcciones no son plantillas: ajusta densidad, interacción, color e imagen al contenido, la marca y el dispositivo. Detalle y criterios de elección en `references/direcciones-visuales.md`. Salvo que el usuario pida una dirección concreta, mantén el **Sistema visual por defecto** (blanco, gris y negro; sans minimalista; sin logo inventado). No mezcles una home inmobiliaria con un portfolio tipográfico sin una razón clara de marca.
 
 ## Parámetros de referencia
 
@@ -96,7 +97,8 @@ Son rangos de partida, no mandatos. Prioriza el viewport y el contenido reales.
 - Evita hacer de cada sección una tarjeta, centrar todo, repetir el mismo patrón de título + párrafo + botón y usar un mosaico cuando las imágenes no son el contenido principal.
 - Evita mayúsculas enormes para párrafos, etiquetas diminutas, titulares ilegibles, contraste pobre, animación sin propósito y estados inactivos que parecen clicables.
 - No inventes logotipos, isotipos ni marcas si el proyecto no tiene uno; deja el espacio sin logo.
-- No uses serif, cursivas ni color de acento por defecto cuando el brief no lo pide (ver Predeterminados).
+- No uses fondos ni paletas cálidas o tintadas (crema, beige, arena, marfil): el fondo es blanco o gris neutro.
+- No uses serif, cursivas, display decorativos ni color de acento cuando el brief no lo pide (ver *Sistema visual por defecto*).
 - No uses frases, marcas, personas, métricas o contenido de las capturas como si pertenecieran al proyecto.
 
 ## Revisión antes de entregar
