@@ -48,9 +48,9 @@ Copia el bloque siguiente y envíaselo al agente: el propio prompt indica al age
 
 ```text
 Instala y configura en este entorno la skill `visual-design`, que vive en este repositorio público de GitHub:
-https://github.com/Justin20083/skill-visual-design
+https://github.com/JustinLeoni/skill-visual-design
 
-1. Accede al repositorio y descárgalo por tu cuenta: usa `git clone` a un directorio temporal (por ejemplo https://github.com/Justin20083/skill-visual-design.git). Si no tienes git o acceso a la red, descarga el zip del release más reciente (https://github.com/Justin20083/skill-visual-design/releases/latest) y descomprímelo. Si tampoco puedes acceder a la red, pide al usuario el enlace o los archivos.
+1. Accede al repositorio y descárgalo por tu cuenta: usa `git clone` a un directorio temporal (por ejemplo https://github.com/JustinLeoni/skill-visual-design.git). Si no tienes git o acceso a la red, descarga el zip del release más reciente (https://github.com/JustinLeoni/skill-visual-design/releases/latest) y descomprímelo. Si tampoco puedes acceder a la red, pide al usuario el enlace o los archivos.
 2. Dentro de lo descargado, localiza la carpeta `visual-design/` (contiene SKILL.md, metadata.json y references/). Léela entera para entender la skill.
 3. Copia esa carpeta completa al directorio persistente de skills que este agente carga realmente. Detecta la ruta correcta en lugar de asumirla; comprueba las convenciones documentadas de tu entorno (por ejemplo, un directorio de skills bajo el home del agente o una variable de entorno que lo defina). Si no puedes determinar la ruta con certeza, pregunta antes de escribir.
 4. Verifica que la copia contiene SKILL.md y la carpeta references/.
@@ -69,7 +69,7 @@ La ruta exacta varía entre herramientas y proveedores. La instalación de la ca
 Si prefieres una sola línea, este prompt también funciona:
 
 ```text
-Descarga el repositorio https://github.com/Justin20083/skill-visual-design, instala su carpeta `visual-design` en el directorio de skills persistente que cargas realmente (detéctalo; si no lo conoces, pregunta), añade a tus instrucciones persistentes globales la regla "para diseñar, implementar o revisar interfaces, consulta y aplica la skill visual-design antes de decidir la dirección visual", y dime las rutas que usaste.
+Descarga el repositorio https://github.com/JustinLeoni/skill-visual-design, instala su carpeta `visual-design` en el directorio de skills persistente que cargas realmente (detéctalo; si no lo conoces, pregunta), añade a tus instrucciones persistentes globales la regla "para diseñar, implementar o revisar interfaces, consulta y aplica la skill visual-design antes de decidir la dirección visual", y dime las rutas que usaste.
 ```
 
 ## Instalación manual (cualquier agente)
