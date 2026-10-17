@@ -44,26 +44,37 @@ El núcleo es `SKILL.md` (frontmatter `name` y `description` + instrucciones). `
 
 ## Instalación mediante un prompt (recomendado)
 
-Clona o descarga este repositorio y envía el siguiente prompt al agente que tenga acceso a esos archivos. El prompt es genérico: el agente debe descubrir en su propio entorno cuál es el directorio de skills y el archivo de instrucciones persistentes que realmente lee.
+Copia el bloque siguiente y envíaselo al agente: el propio prompt indica al agente que acceda al repositorio, lo descargue y lo instale, sin que el usuario tenga que preparar archivos. El agente debe descubrir en su entorno el directorio de skills y el archivo de instrucciones persistentes que realmente lee.
 
 ```text
-Instala y configura en este entorno la skill `visual-design` desde la carpeta `visual-design` de este repositorio.
+Instala y configura en este entorno la skill `visual-design`, que vive en este repositorio público de GitHub:
+https://github.com/Justin20083/skill-visual-design
 
-1. Lee SKILL.md, metadata.json y la carpeta references/.
-2. Copia la carpeta completa de la skill al directorio persistente de skills que este agente carga realmente. Detecta la ruta correcta en lugar de asumirla; comprueba las convenciones documentadas del entorno (por ejemplo, un directorio de skills bajo el home del agente o una variable de entorno que lo defina). Si no puedes determinar la ruta con certeza, pregunta antes de escribir.
-3. Verifica que la copia contiene SKILL.md y la carpeta references/.
-4. Para que la skill se considere automáticamente en trabajos futuros de diseño, añade una regla breve al archivo de instrucciones persistentes globales que este agente realmente lea (por ejemplo un AGENTS.md global u otro archivo equivalente de su entorno): "Para diseñar, implementar o revisar interfaces, consulta y aplica la skill visual-design antes de decidir la dirección visual; adapta sus principios al brief, a la marca y a las referencias del proyecto."
-5. No reemplaces instrucciones existentes: añade la regla sin borrar contenido.
-6. Al terminar, indica exactamente qué rutas usaste (carpeta de la skill y archivo de instrucciones) y cómo se activará la skill en futuras sesiones de este entorno.
+1. Accede al repositorio y descárgalo por tu cuenta: usa `git clone` a un directorio temporal (por ejemplo https://github.com/Justin20083/skill-visual-design.git). Si no tienes git o acceso a la red, descarga el zip del release más reciente (https://github.com/Justin20083/skill-visual-design/releases/latest) y descomprímelo. Si tampoco puedes acceder a la red, pide al usuario el enlace o los archivos.
+2. Dentro de lo descargado, localiza la carpeta `visual-design/` (contiene SKILL.md, metadata.json y references/). Léela entera para entender la skill.
+3. Copia esa carpeta completa al directorio persistente de skills que este agente carga realmente. Detecta la ruta correcta en lugar de asumirla; comprueba las convenciones documentadas de tu entorno (por ejemplo, un directorio de skills bajo el home del agente o una variable de entorno que lo defina). Si no puedes determinar la ruta con certeza, pregunta antes de escribir.
+4. Verifica que la copia contiene SKILL.md y la carpeta references/.
+5. Para que la skill se considere automáticamente en trabajos futuros de diseño, añade una regla breve al archivo de instrucciones persistentes globales que este agente realmente lea (por ejemplo un AGENTS.md global u otro archivo equivalente de su entorno): "Para diseñar, implementar o revisar interfaces, consulta y aplica la skill visual-design antes de decidir la dirección visual; adapta sus principios al brief, a la marca y a las referencias del proyecto."
+6. No reemplaces instrucciones existentes: añade la regla sin borrar contenido.
+7. Elimina el clon o la descarga temporal cuando termines; no dejes archivos sueltos.
+8. Al terminar, indica exactamente qué rutas usaste (carpeta de la skill y archivo de instrucciones) y cómo se activará la skill en futuras sesiones de este entorno.
 
 No afirmes que la regla aplica a otros agentes, cuentas o dispositivos fuera de este entorno.
 ```
 
 La ruta exacta varía entre herramientas y proveedores. La instalación de la carpeta hace disponible la skill; la instrucción persistente hace que el agente la considere automáticamente en tareas relevantes cuando su plataforma admite esa configuración.
 
+### Prompt corto (alternativa)
+
+Si prefieres una sola línea, este prompt también funciona:
+
+```text
+Descarga el repositorio https://github.com/Justin20083/skill-visual-design, instala su carpeta `visual-design` en el directorio de skills persistente que cargas realmente (detéctalo; si no lo conoces, pregunta), añade a tus instrucciones persistentes globales la regla "para diseñar, implementar o revisar interfaces, consulta y aplica la skill visual-design antes de decidir la dirección visual", y dime las rutas que usaste.
+```
+
 ## Instalación manual (cualquier agente)
 
-1. Copia la carpeta `visual-design/` al directorio de skills persistente que use tu agente. No hay una ruta universal: usa la que documente tu herramienta o la que el propio agente detecte en su entorno.
+1. Descarga el repositorio (o el zip del release más reciente) y copia la carpeta `visual-design/` al directorio de skills persistente que use tu agente. No hay una ruta universal: usa la que documente tu herramienta o la que el propio agente detecte en su entorno.
 2. Para activar su consideración automática, añade la regla breve (la del prompt de instalación) al archivo de instrucciones persistentes globales que tu agente lea —por ejemplo un `AGENTS.md` global u otro archivo equivalente—, conservando las instrucciones existentes.
 3. Inicia una tarea de diseño o invoca la skill directamente con su nombre para que se cargue.
 
