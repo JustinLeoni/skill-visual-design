@@ -20,6 +20,17 @@ Convierte el brief y las referencias visuales en una interfaz distintiva, legibl
 
 Tiene prioridad cuando el usuario adjunta referencias de diseño o pide una estética concreta (editorial, minimalista, premium, de estudio creativo, técnica, brutalista, cinematográfica…). Si el usuario da un sistema visual propio, conserva su identidad y aplica estos principios solo donde encajen.
 
+## Predeterminados
+
+Cuando el brief **no especifica** estilo, color, tipografía ni marca, aplica estos valores por defecto en lugar de inventarlos:
+
+- **Color:** monocromático, blanco y negro con una escala de grises neutra. Sin color de acento salvo que el proyecto lo justifique.
+- **Tipografía:** solo familias **sans** (incluida una monoespaciada para datos, códigos y etiquetas si aporta). No uses serif ni cursivas por defecto.
+- **Marca:** si no existe un logotipo, **no inventes uno**. Deja el espacio sin logo; si hace falta identidad, usa el nombre del proyecto en texto.
+- **Imagen:** si no hay imágenes reales, no coloques placeholders genéricos ni imágenes remotas arbitrarias; trabaja con tipografía, espacio y datos.
+
+Estos valores ceden ante cualquier indicación del usuario, referencia visual o sistema de marca existente.
+
 ## Principios
 
 1. **Diseña desde la intención.** Antes de maquetar, identifica audiencia, acción principal, contenido imprescindible, personalidad de marca, restricciones técnicas y dispositivo objetivo. No inventes requisitos ni copies texto de las imágenes de referencia.
@@ -55,7 +66,7 @@ Elige una dirección principal o mezcla dos con moderación:
 - **Técnica / utilitaria:** densidad alta, datos precisos, tablas y estados claros, tipografía monoespaciada para valores. Dashboards, herramientas, paneles de administración.
 - **Expresiva / brutalista:** contraste extremo, tipografía a gran escala, color plano, bordes duros o retícula visible. Declaraciones de marca, campañas, sitios de autor.
 
-Estas direcciones no son plantillas: ajusta densidad, interacción, color e imagen al contenido, la marca y el dispositivo. Detalle y criterios de elección en `references/direcciones-visuales.md`. No mezcles una home inmobiliaria con un portfolio tipográfico sin una razón clara de marca.
+Estas direcciones no son plantillas: ajusta densidad, interacción, color e imagen al contenido, la marca y el dispositivo. Detalle y criterios de elección en `references/direcciones-visuales.md`. Si el brief no pide una dirección concreta, parte de los **Predeterminados** (monocromo, sans y sin logo inventado). No mezcles una home inmobiliaria con un portfolio tipográfico sin una razón clara de marca.
 
 ## Parámetros de referencia
 
@@ -84,6 +95,8 @@ Son rangos de partida, no mandatos. Prioriza el viewport y el contenido reales.
 - Evita gradientes neón o morados por defecto, efectos de vidrio, sombras voluminosas, exceso de iconos, emojis decorativos y estética genérica de plantilla.
 - Evita hacer de cada sección una tarjeta, centrar todo, repetir el mismo patrón de título + párrafo + botón y usar un mosaico cuando las imágenes no son el contenido principal.
 - Evita mayúsculas enormes para párrafos, etiquetas diminutas, titulares ilegibles, contraste pobre, animación sin propósito y estados inactivos que parecen clicables.
+- No inventes logotipos, isotipos ni marcas si el proyecto no tiene uno; deja el espacio sin logo.
+- No uses serif, cursivas ni color de acento por defecto cuando el brief no lo pide (ver Predeterminados).
 - No uses frases, marcas, personas, métricas o contenido de las capturas como si pertenecieran al proyecto.
 
 ## Revisión antes de entregar

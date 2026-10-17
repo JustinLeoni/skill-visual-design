@@ -9,6 +9,8 @@ Arquetipos de dirección para elegir el tono del proyecto. Son puntos de partida
 3. Elige la dirección que sirva a esa intención y sea sostenible con el contenido disponible.
 4. Define una **identidad común** (tipografía base, sistema de color, escala de espacio) y aplica la dirección dentro de ella.
 
+> **Si el brief no especifica nada**, no elijas una dirección expresiva por defecto: parte de los Predeterminados de la skill —monocromático blanco y negro, solo tipografía sans y sin logotipo inventado— y añade carácter solo si el contenido o la marca lo justifican.
+
 ## Editorial tipográfica
 
 - **Rasgos:** fondos claros o neutros, titulares a gran escala, composición descentrada, imágenes pequeñas o ausentes, microtipografía cuidada, mucho espacio negativo.

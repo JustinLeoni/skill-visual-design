@@ -46,7 +46,7 @@
   if (reduce || !('IntersectionObserver' in window)) return;
 
   var targets = document.querySelectorAll(
-    '.hero__meta, .band__grid > .prose, .numbers > li, .dirs, .dolist, .tree, .cta__inner'
+    '.hero__meta, .band__grid > .prose, .numbers > li, .defaults, .dirs, .dolist, .tree, .cta__inner'
   );
 
   targets.forEach(function (el) { el.classList.add('reveal'); });

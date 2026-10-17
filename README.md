@@ -19,6 +19,7 @@ Cubre distintos tipos de diseño, no un estilo único:
 - Orienta la creación y el rediseño de cualquier interfaz, del primer viewport a la entrega.
 - Guía tipografía, grillas, color, fotografía, ritmo, componentes, responsive y movimiento.
 - Ofrece direcciones visuales reutilizables (editorial, inmersiva, modular de producto, contenido, técnica, expresiva).
+- Si el brief no especifica estilo, aplica **predeterminados**: monocromo blanco y negro, tipografía solo sans (sin serif ni cursivas) y sin logotipo inventado.
 - Incluye criterios de accesibilidad y comportamiento funcional para que el resultado no se quede en una maqueta.
 - Evita copiar contenido de las referencias, inventar cifras o testimonios y repetir patrones que no correspondan al proyecto.
 
