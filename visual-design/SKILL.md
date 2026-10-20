@@ -104,6 +104,19 @@ Son rangos de partida, no mandatos. Prioriza el viewport y el contenido reales.
 - No uses serif, cursivas, display decorativos ni color de acento cuando el brief no lo pide (ver *Sistema visual por defecto*).
 - No uses frases, marcas, personas, métricas o contenido de las capturas como si pertenecieran al proyecto.
 
+## Lecciones aprendidas (iteraciones reales, 2026-10-20 — demo aerolínea)
+
+Anotado tras una sesión de diseño real con feedback del usuario. Complementa el sistema por defecto.
+
+1. **Los pedidos del usuario anulan el sistema por defecto.** Si pide imágenes de fondo, color, glass, etc., aplícalo — pero conserva el carácter monocromático con tratamientos (grayscale, overlays, tintes neutros) para que la página no pierda su identidad.
+2. **Cuando la web usa imágenes de fondo con contenido superpuesto, el degradado de unión debe integrarse en la propia imagen** (máscara de la imagen + overlay con rampa), nunca en una franja separada encima: la separación siempre se nota como "corte".
+3. **Nada de texto sobre la zona del degradado.** Reserva un plateau firme del color base hasta que termina el contenido; el fundido solo cubre aire y espacio vacío. Nunca fundas sobre titulares, etiquetas o cifras.
+4. **Los paneles sólidos flotando sobre una imagen se camuflan con una aureola de fondo integrada** (radial feather del mismo color del panel, detrás, extendida hacia la zona del gradiente), no con transparencia ni sombras ni bordes.
+5. **Grises jerárquicos en secciones oscuras:** jerarquía secundaria > 300 mínimo; también hay que vigilar los grises 400+ cuando la zona aclara con el scroll — son los primeros en perderse.
+6. **Modo oscuro automático** (sin toggle): mapea tokens completos (superficie, tinta, grises), no solo fondo/texto; y corrige los "bies fijos" — clases que pintan tinta con un token concreto (tinta invertida), overlays con rgba constantes y paneles invertidos — con overrides específicos dentro del bloque `prefers-color-scheme: dark`.
+7. **Animación por defecto en estas demos:** entrada escalonada del hero (fade + slide ~60-90ms de stagger), reveals on scroll con `IntersectionObserver` (cerrar el observador al disparar), hover con lift pequeño (3-4px), y parallax sutil de fondos. Siempre con guard de `prefers-reduced-motion`.
+8. **Dimensiones de tarjetas de contenido denso:** sin `min-height` forzados — dejar que el contenido defina la altura y usar `padding` para el aire; el espacio central vacío de tarjetas estiradas se percibe como hueco de plantilla.
+
 ## Revisión antes de entregar
 
 - ¿La dirección responde al brief y es reconocible como una decisión, no como una plantilla?
